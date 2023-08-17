@@ -1,0 +1,35 @@
+.navContainer {
+  background-color: #fff;
+  padding: 1rem 1.4rem;
+  width: 70%;
+  margin: 3rem auto;
+  border-radius: 0.7rem;
+}
+
+.navContainer,
+.navItemsContainer,
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItemsContainer {
+  list-style: none;
+  column-gap: 2rem;
+}
+
+.navItemsContainer > .navItem {
+  font-family: RobotoRegular;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.navItemsContainer > .navItem:hover {
+  color: #fc5185;
+}
+
+.logoImg {
+  cursor: pointer;
+}
