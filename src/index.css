@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #004caa;
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("./assets/fonts/static/RobotoSlab-Medium.ttf");
+}
+
+.navContainer {
+  font-size: 40px;
+}

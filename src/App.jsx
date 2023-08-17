@@ -1,7 +1,8 @@
 import "./App.css";
+import Navbar from "./section/navbar/Navbar";
 
 function App() {
-  return <h1>Dentist Website</h1>;
+  return <Navbar />;
 }
 
 export default App;
