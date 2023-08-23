@@ -29,6 +29,11 @@
   src: url("./assets/fonts/josefin/JosefinSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: josefinBold;
+  src: url("./assets/fonts/josefin/JosefinSans-Medium.ttf");
+}
+
 :root {
   --pink: #fc5185;
   --bgColor: #004caa;
@@ -50,7 +55,11 @@ body {
 }
 
 .globalWidth {
-  width: 70%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.globalPadding {
+  padding: 6rem 0;
 }
