@@ -1,0 +1,152 @@
+.homeSection {
+  padding: 4rem 0;
+  height: 95vh;
+  background-color: var(--bgColor);
+}
+
+.homeSection > .homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13rem;
+}
+
+.homeContainer > .homeLeft,
+.homeRight {
+  width: 45%;
+}
+
+.homeContainer > .homeRight .rightImageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.homeContainer > .homeRight .tooth-img {
+  width: 100%;
+  height: 100%;
+}
+
+.homeContainer > .homeRight .nurse-img,
+.doctor-img,
+.cloud-img {
+  position: absolute;
+}
+
+.homeContainer > .homeRight .cloud-img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125%;
+}
+
+.homeContainer > .homeRight .nurse-img {
+  left: 4.5rem;
+  bottom: 0;
+  animation-name: nurse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+
+.homeContainer > .homeRight .doctor-img {
+  right: 4.5rem;
+  bottom: -2rem;
+  animation-name: doctor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.homeContainer > .homeLeft {
+  padding-right: 3rem;
+}
+
+.homeLeft > .heading,
+.mainHeading,
+.description {
+  color: var(--white);
+}
+
+.homeLeft > .mainHeading,
+.heading {
+  font-family: var(--josefinRegular);
+}
+
+.homeLeft > .heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.homeLeft > .mainHeading {
+  font-size: 3.8rem;
+  margin-bottom: 1.7rem;
+}
+
+.homeLeft > .description {
+  font-size: 1rem;
+  font-family: var(--robotoLight);
+  margin-bottom: 2.2rem;
+  line-height: 1.8rem;
+  color: var(--white);
+}
+
+.homeLeft > .btnContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.homeLeft > .btnContainer .appointmentBtn,
+.learnBtn {
+  font-size: 1.1rem;
+  padding: 1.1rem 3rem;
+  color: var(--white);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btnContainer > .appointmentBtn {
+  background-color: var(--pink);
+  border: 0.1rem solid var(--pink);
+}
+
+.btnContainer > .learnBtn {
+  background-color: transparent;
+  border: 0.1rem solid var(--white);
+}
+
+.btnContainer > .appointmentBtn:hover {
+  background-color: var(--white);
+  border: 0.1rem solid var(--white);
+  color: var(--black);
+}
+
+.btnContainer > .learnBtn:hover {
+  background-color: var(--pink);
+  border: 0.1rem solid var(--pink);
+}
+
+.homeRight > .imageContainer {
+  position: relative;
+}
+
+@keyframes nurse {
+  from {
+    bottom: 0rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}
+
+@keyframes doctor {
+  from {
+    bottom: -1.1rem;
+  }
+  to {
+    bottom: 0.2rem;
+  }
+}

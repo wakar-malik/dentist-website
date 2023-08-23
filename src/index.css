@@ -4,15 +4,53 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #004caa;
+@font-face {
+  font-family: robotoMedium;
+  src: url("./assets/fonts/roboto/RobotoSlab-Medium.ttf");
 }
 
 @font-face {
-  font-family: RobotoRegular;
-  src: url("./assets/fonts/static/RobotoSlab-Medium.ttf");
+  font-family: robotoLight;
+  src: url("./assets/fonts/roboto/RobotoSlab-Light.ttf");
 }
 
-.navContainer {
-  font-size: 40px;
+@font-face {
+  font-family: josefinMedium;
+  src: url("./assets/fonts/josefin/JosefinSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: josefinLight;
+  src: url("./assets/fonts/josefin/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: josefinRegular;
+  src: url("./assets/fonts/josefin/JosefinSans-Regular.ttf");
+}
+
+:root {
+  --pink: #fc5185;
+  --bgColor: #004caa;
+  --navTextColor: #006;
+  --textColor: #666666;
+  --headingColor: #222;
+  ---bodyColor: #666;
+  --white: #fff;
+  --black: #000;
+  --robotoLight: robotoLight;
+  --robotoRegular: robotoRegular;
+  --robotoMedium: robotoMedium;
+  --josefinLight: josefinLight;
+  --josefinRegular: josefinRegular;
+}
+
+body {
+  color: var(---bodyColor);
+}
+
+.globalWidth {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
