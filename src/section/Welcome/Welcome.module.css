@@ -1,0 +1,44 @@
+.welcomeSection {
+  display: flex;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2.5rem;
+  text-align: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card .cardImgContainer {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+
+.card .cardImgContainer .cardImg {
+  width: 3rem;
+}
+
+.card .cardTitle {
+  color: var(--black);
+}
+
+.card .cardTitle {
+  font-family: var(--josefinRegular);
+  margin-bottom: 1rem;
+}
+
+.card .cardDesc {
+  font-family: var(--robotoRegular);
+  font-size: 1.2rem;
+}
