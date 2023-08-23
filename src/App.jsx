@@ -1,8 +1,8 @@
 import "./App.css";
-import Navbar from "./section/navbar/Navbar";
+import Home from "./section/Home/Home";
 
 function App() {
-  return <Navbar />;
+  return <Home />;
 }
 
 export default App;

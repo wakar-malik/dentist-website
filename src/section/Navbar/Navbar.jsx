@@ -7,7 +7,7 @@ const Navbar = () => {
   const navItems = ["Home", "About", "Services", "Dentist", "Blog", "Contact"];
 
   return (
-    <nav className={styles.navContainer}>
+    <nav className={`${styles.navContainer} globalWidth`}>
       <Logo imgSrc={IMAGES.logo} />
       <NavItems navItems={navItems} />
     </nav>

@@ -1,8 +1,6 @@
 .navContainer {
   background-color: #fff;
   padding: 1rem 1.4rem;
-  width: 70%;
-  margin: 3rem auto;
   border-radius: 0.7rem;
 }
 
@@ -20,7 +18,7 @@
 }
 
 .navItemsContainer > .navItem {
-  font-family: RobotoRegular;
+  font-family: var(--robotoMedium);
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.1s ease-in;
