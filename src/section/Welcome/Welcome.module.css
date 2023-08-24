@@ -1,7 +1,4 @@
-.welcomeSection {
-  display: flex;
-}
-
+/* card section css */
 .cardContainer {
   display: flex;
   align-items: center;
@@ -39,6 +36,104 @@
 }
 
 .card .cardDesc {
-  font-family: var(--robotoRegular);
+  font-family: var(--robotoSlabRegular);
   font-size: 1.2rem;
+}
+
+/* family section css */
+.familySection {
+  margin-top: 8rem;
+}
+
+.familySection .familyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 6rem;
+}
+
+.familyContainer .familyLeft,
+.familyRight {
+  width: 50%;
+}
+
+.familyContainer .familyLeft .familyImgContainer {
+  position: relative;
+}
+
+.familyContainer .familyLeft .familyImgContainer .familyImage {
+  width: 100%;
+}
+
+.familyContainer .familyLeft .familyImgContainer .animatedImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-name: familyAnima;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+.familyContainer .familyRight .familyHeading {
+  font-size: 2.7rem;
+  color: var(--black);
+  font-family: var(--josefinRegular);
+  margin-bottom: 1.5rem;
+}
+
+.familyContainer .familyRight .familyDesc {
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+  font-family: var(--robotoSlabRegular);
+}
+
+.familyContainer .familyRight .familyButton {
+  background-color: transparent;
+  padding: 0.2rem 0;
+  font-size: 1rem;
+  color: #fc5185;
+  border-bottom: 2px solid #fc5185;
+  margin-bottom: 3rem;
+}
+
+.familyContainer .familyRight .familyButton:hover {
+  color: var(--bgColor);
+}
+
+.familyRight .familyCard {
+  width: 100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.familyCard .familyCardColumn:not(:nth-child(2)) {
+  margin-bottom: 3rem;
+}
+
+.familyRight .familyCard .familyCardColumnTitle {
+  color: var(--black);
+}
+
+.familyRight .familyCard .familyCardColumnTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--robotoSlabMedium);
+}
+
+.familyRight .familyCard .familyCardColumnSubTitle {
+  font-family: var(--robotoSlabRegular);
+  font-size: 1.1rem;
+}
+
+@keyframes familyAnima {
+  from {
+    bottom: 1rem;
+  }
+  to {
+    bottom: -1rem;
+  }
 }

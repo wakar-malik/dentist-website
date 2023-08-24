@@ -18,7 +18,7 @@
 }
 
 .navItemsContainer > .navItem {
-  font-family: var(--robotoMedium);
+  font-family: var(--robotoSlabMedium);
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.1s ease-in;

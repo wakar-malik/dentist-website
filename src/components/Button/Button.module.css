@@ -1,3 +1,5 @@
 .button {
-  font-family: var(--robotoMedium);
+  font-family: var(--robotoSlabMedium);
+  border: none;
+  transition: all 0.2s ease-in;
 }
