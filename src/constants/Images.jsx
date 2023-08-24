@@ -8,6 +8,12 @@ import cloud from "../assets/images/asset-48.png";
 import telephoneCard from "../assets/images/asset-13.png";
 import doctorCard from "../assets/images/asset-14.png";
 import plusCard from "../assets/images/asset-15.png";
+import treatment1 from "../assets/images/asset-20.svg";
+import treatment2 from "../assets/images/asset-21.svg";
+import treatment3 from "../assets/images/asset-22.svg";
+import treatment4 from "../assets/images/asset-23.svg";
+import treatment5 from "../assets/images/asset-24.svg";
+import treatment6 from "../assets/images/asset-25.svg";
 
 export default {
   logo,
@@ -20,4 +26,10 @@ export default {
   plusCard,
   tooth2,
   familyAnima,
+  treatment1,
+  treatment2,
+  treatment3,
+  treatment4,
+  treatment5,
+  treatment6,
 };

@@ -45,19 +45,22 @@
   --navTextColor: #006;
   --textColor: #666666;
   --headingColor: #222;
-  ---bodyColor: #666;
+  --bodyColor: #666;
+  --borderColor: #3672bc;
+  --desColor: #d7d3d3;
+  --hoverBg: #1259b0;
   --white: #fff;
   --black: #000;
   --robotoSlabLight: robotoLight;
-  --robotoSlabRegular: robotoRegular;
   --robotoSlabMedium: robotoMedium;
+  --robotoSlabRegular: robotoRegular;
   --josefinLight: josefinLight;
   --josefinRegular: josefinRegular;
   --josefinMedium: josefinMedium;
 }
 
 body {
-  color: var(---bodyColor);
+  color: var(--bodyColor);
 }
 
 .globalWidth {

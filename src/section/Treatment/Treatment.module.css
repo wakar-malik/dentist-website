@@ -1,0 +1,58 @@
+.treatmentSection {
+  background-color: var(--bgColor);
+}
+
+.treatmentContainer .treatMentHeading {
+  color: var(--white);
+  text-align: center;
+  font-size: 2.6rem;
+  font-family: var(--josefinRegular);
+}
+
+/* treatment cards */
+.treatmentCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.treatMentCard {
+  border: 1px solid var(--borderColor);
+  padding: 3rem 2rem;
+  transition: all 0.1s ease-in;
+}
+
+.treatMentCard .treatmentCardImg {
+  margin-bottom: 3rem;
+}
+
+.treatMentCard .treatmentTitle {
+  font-size: 1.4rem;
+  color: var(--white);
+  font-family: var(--josefinRegular);
+}
+
+.treatMentCard .treatmentDesc {
+  font-size: 1rem;
+  font-family: var(--robotoSlabRegular);
+  color: var(--desColor);
+  margin: 2rem 0;
+}
+
+.treatMentCard .treatmentCardBtn {
+  border-bottom: 2px solid var(--pink);
+  background-color: transparent;
+  color: var(--white);
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.treatMentCard:hover .treatmentCardBtn {
+  color: var(--pink);
+}
+
+.treatMentCard:hover {
+  color: var(--pink);
+  background-color: var(--hoverBg);
+}

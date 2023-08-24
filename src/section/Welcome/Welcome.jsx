@@ -29,13 +29,13 @@ const cardData = [
 function Welcome() {
   return (
     <Section className={`${styles.welcomeSection} globalWidth globalPadding`}>
-      <Cards cardData={cardData} />
+      <WelcomeCards cardData={cardData} />
       <Family />
     </Section>
   );
 }
 
-function Cards({ cardData }) {
+function WelcomeCards({ cardData }) {
   return (
     <div className={styles.cardContainer}>
       {cardData.map((card, index) => (
