@@ -1,5 +1,7 @@
 import logo from "../assets/images/asset-0.png";
 import tooth from "../assets/images/asset-12.png";
+import tooth2 from "../assets/images/asset-18.png";
+import familyAnima from "../assets/images/asset-19.png";
 import nurse from "../assets/images/asset-10.png";
 import doctor from "../assets/images/asset-11.png";
 import cloud from "../assets/images/asset-48.png";
@@ -16,4 +18,6 @@ export default {
   telephoneCard,
   doctorCard,
   plusCard,
+  tooth2,
+  familyAnima,
 };

@@ -6,12 +6,17 @@
 
 @font-face {
   font-family: robotoMedium;
-  src: url("./assets/fonts/roboto/RobotoSlab-Medium.ttf");
+  src: url("./assets/fonts/robotoslab/RobotoSlab-Medium.ttf");
 }
 
 @font-face {
   font-family: robotoLight;
-  src: url("./assets/fonts/roboto/RobotoSlab-Light.ttf");
+  src: url("./assets/fonts/robotoslab/RobotoSlab-Light.ttf");
+}
+
+@font-face {
+  font-family: robotoRegular;
+  src: url("./assets/fonts/robotoslab/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
@@ -30,7 +35,7 @@
 }
 
 @font-face {
-  font-family: josefinBold;
+  font-family: josefinMedium;
   src: url("./assets/fonts/josefin/JosefinSans-Medium.ttf");
 }
 
@@ -43,11 +48,12 @@
   ---bodyColor: #666;
   --white: #fff;
   --black: #000;
-  --robotoLight: robotoLight;
-  --robotoRegular: robotoRegular;
-  --robotoMedium: robotoMedium;
+  --robotoSlabLight: robotoLight;
+  --robotoSlabRegular: robotoRegular;
+  --robotoSlabMedium: robotoMedium;
   --josefinLight: josefinLight;
   --josefinRegular: josefinRegular;
+  --josefinMedium: josefinMedium;
 }
 
 body {
