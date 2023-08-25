@@ -47,12 +47,10 @@ const TreatmentData = [
 function Treatment() {
   return (
     <Section className={styles.treatmentSection}>
-      <Section
-        className={`${styles.treatmentContainer} globalWidth globalPadding`}
-      >
+      <div className={`${styles.treatmentContainer} globalWidth globalPadding`}>
         <h1 className={styles.treatMentHeading}>Treatments</h1>
         <TreatMentCards />
-      </Section>
+      </div>
     </Section>
   );
 }
