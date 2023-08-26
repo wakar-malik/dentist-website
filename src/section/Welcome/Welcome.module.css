@@ -1,45 +1,3 @@
-/* card section css */
-.cardContainer {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 2.5rem;
-  text-align: center;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
-}
-
-.card .cardImgContainer {
-  width: 4rem;
-  height: 4rem;
-  margin: auto;
-  display: grid;
-  place-items: center;
-  margin-bottom: 2rem;
-}
-
-.card .cardImgContainer .cardImg {
-  width: 3rem;
-}
-
-.card .cardTitle {
-  color: var(--black);
-}
-
-.card .cardTitle {
-  font-family: var(--josefinRegular);
-  margin-bottom: 1rem;
-}
-
-.card .cardDesc {
-  font-family: var(--robotoSlabRegular);
-  font-size: 1.2rem;
-}
-
 /* family section css */
 .familySection {
   margin-top: 8rem;
@@ -127,6 +85,53 @@
 .familyRight .familyCard .familyCardColumnSubTitle {
   font-family: var(--robotoSlabRegular);
   font-size: 1.1rem;
+}
+
+/* card section css */
+.welcomeCardContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.welcomeCard {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2.5rem;
+  transition: all 0.2s ease-in;
+  text-align: center;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.welcomeCard:hover {
+  transform: translateY(-1rem);
+}
+
+.welcomeCard .welcomeCardImgContainer {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+
+.welcomeCard .welcomeCardImgContainer .welcomeCardImg {
+  width: 3rem;
+}
+
+.welcomeCard .welcomeCardTitle {
+  color: var(--black);
+}
+
+.welcomeCard .welcomeCardTitle {
+  font-family: var(--josefinRegular);
+  margin-bottom: 1rem;
+}
+
+.welcomeCard .welcomeCardDesc {
+  font-family: var(--robotoSlabRegular);
+  font-size: 1.2rem;
 }
 
 @keyframes familyAnima {

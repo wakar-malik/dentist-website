@@ -14,6 +14,9 @@ import treatment3 from "../assets/images/asset-22.svg";
 import treatment4 from "../assets/images/asset-23.svg";
 import treatment5 from "../assets/images/asset-24.svg";
 import treatment6 from "../assets/images/asset-25.svg";
+import dentist1 from "../assets/images/asset-26.png";
+import dentist2 from "../assets/images/asset-27.png";
+import dentist3 from "../assets/images/asset-28.png";
 
 export default {
   logo,
@@ -32,4 +35,7 @@ export default {
   treatment4,
   treatment5,
   treatment6,
+  dentist1,
+  dentist2,
+  dentist3,
 };

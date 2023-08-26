@@ -1,7 +1,8 @@
 import "./App.css";
 import Home from "./section/Home/Home";
-import Treatment from "./section/Treatment/Treatment";
 import Welcome from "./section/Welcome/Welcome";
+import Treatment from "./section/Treatment/Treatment";
+import Dentist from "./section/Dentist/Dentist";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <Welcome />
       <Treatment />
+      <Dentist />
     </>
   );
 }
