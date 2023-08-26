@@ -5,7 +5,7 @@ import Image from "../../components/Image/Image";
 import styles from "./Welcome.module.css";
 import Button from "../../components/Button/Button";
 
-const cardData = [
+const welcomeCardData = [
   {
     cardImg: IMAGES.telephoneCard,
     cardTitle: "Easy Appointment",
@@ -29,22 +29,22 @@ const cardData = [
 function Welcome() {
   return (
     <Section className={`${styles.welcomeSection} globalWidth globalPadding`}>
-      <WelcomeCards cardData={cardData} />
+      <WelcomeCards welcomeCardData={welcomeCardData} />
       <Family />
     </Section>
   );
 }
 
-function WelcomeCards({ cardData }) {
+function WelcomeCards({ welcomeCardData }) {
   return (
-    <div className={styles.cardContainer}>
-      {cardData.map((card, index) => (
-        <Card key={index} className={styles.card}>
-          <div className={styles.cardImgContainer}>
-            <Image src={card.cardImg} className={styles.cardImg} />
+    <div className={styles.welcomeCardContainer}>
+      {welcomeCardData.map((card, index) => (
+        <Card key={index} className={styles.welcomeCard}>
+          <div className={styles.welcomeCardImgContainer}>
+            <Image src={card.cardImg} className={styles.welcomeCardImg} />
           </div>
-          <h1 className={styles.cardTitle}>{card.cardTitle}</h1>
-          <p className={styles.cardDesc}>{card.cardDescription}</p>
+          <h1 className={styles.welcomeCardTitle}>{card.cardTitle}</h1>
+          <p className={styles.welcomeCardDesc}>{card.cardDescription}</p>
         </Card>
       ))}
     </div>

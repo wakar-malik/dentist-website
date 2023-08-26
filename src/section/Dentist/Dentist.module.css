@@ -1,0 +1,109 @@
+/* dentist section */
+.dentistSection {
+  text-align: center;
+}
+.dentistSection .dentistHeading {
+  font-family: var(--josefinRegular);
+  font-size: 2.6rem;
+  color: var(--black);
+}
+
+.dentistSection .dentistBtn {
+  margin-top: 3rem;
+  padding: 0.2rem 0;
+  font-family: var(--robotoSlabRegular);
+  font-size: 1rem;
+  background-color: transparent;
+  border-bottom: 2px solid var(--pink);
+  color: var(--pink);
+}
+
+.dentistSection .dentistBtn:hover {
+  color: var(--hoverBg);
+}
+
+/* dentist cards */
+.dentistCards {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.dentistCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 4rem;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dentistCard:hover {
+  transform: translateY(-1rem);
+}
+
+.dentistCard:hover .dentistCardName {
+  color: var(--pink);
+}
+
+.dentistCard .divider {
+  width: 100%;
+  border-top: 0.1rem solid var(--bodyColor);
+  margin: 1.5rem 0;
+}
+
+.dentistCardImgContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: var(--pink);
+  width: 14rem;
+  height: 14rem;
+  margin-bottom: 2rem;
+}
+
+.dentistCard .dentistCardImgContainer > .dentistCardImg {
+  width: 80%;
+}
+
+.dentistCard .dentistCardName {
+  font-family: var(--josefinRegular);
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 0.4rem;
+}
+
+.dentistCard .dentistCardProfession {
+  font-size: 1rem;
+  font-family: var(--robotoSlabRegular);
+}
+
+.dentistCard .dentistCardSocialIcons {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dentistCard .dentistCardSocialIcons .dentistCardSocialIconContainer {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--bodyColor);
+}
+
+.dentistCard .dentistCardSocialIcons .dentistCardSocialIconContainer:hover {
+  background-color: var(--pink);
+}
+
+.dentistCard
+  .dentistCardSocialIcons
+  .dentistCardSocialIconContainer
+  .dentistCardSocialIcon {
+  color: var(--white);
+  font-size: 0.9rem;
+}
