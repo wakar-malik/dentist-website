@@ -1,0 +1,69 @@
+/* testimonial section css */
+
+.testimonialSection .testimonialSectionHeading {
+  text-align: center;
+  font-size: 2.6rem;
+  color: var(--black);
+  font-family: var(--josefinRegular);
+}
+
+/* swiper css */
+.swiperContainer {
+  margin-top: 3rem;
+}
+
+/* testimonial card css */
+.testimonialCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  margin-bottom: 5rem;
+}
+
+.testimonialCard .testimonialCardLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.testimonialCard .testimonialCardLeft .testimonialCardImgContainer {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+  background-color: var(--pink);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+}
+
+.testimonialCard
+  .testimonialCardLeft
+  .testimonialCardImgContainer
+  .testimonialCardImg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+.testimonialCard .testimonialCardLeft .testimonialCardName {
+  font-family: var(--josefinRegular);
+  margin-bottom: 0.3rem;
+}
+
+.testimonialCard .testimonialCardLeft .testimonialCardProfession {
+  font-family: var(--robotoSlabRegular);
+}
+
+.testimonialCard .testimonialCardRight .testimonialCardHeading {
+  font-family: var(--josefinRegular);
+  margin-bottom: 0.6rem;
+}
+
+.testimonialCard .testimonialCardRight .testimonialCardDescription {
+  font-family: var(--robotoSlabRegular);
+  margin-bottom: 0.6rem;
+}

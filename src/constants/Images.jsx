@@ -17,6 +17,7 @@ import treatment6 from "../assets/images/asset-25.svg";
 import dentist1 from "../assets/images/asset-26.png";
 import dentist2 from "../assets/images/asset-27.png";
 import dentist3 from "../assets/images/asset-28.png";
+import testimonial from "../assets/images/asset-35.png";
 import gallery1 from "../assets/images/gallery-1.jpeg";
 import gallery2 from "../assets/images/gallery-2.jpeg";
 import gallery3 from "../assets/images/gallery-3.jpeg";
@@ -48,4 +49,5 @@ export default {
   gallery3,
   gallery4,
   gallery5,
+  testimonial,
 };
