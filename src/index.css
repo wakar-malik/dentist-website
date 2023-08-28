@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  color: var(--bodyColor);
+  position: relative;
+}
+
 @font-face {
   font-family: robotoMedium;
   src: url("./assets/fonts/robotoslab/RobotoSlab-Medium.ttf");
@@ -56,10 +61,6 @@
   --josefinLight: josefinLight;
   --josefinRegular: josefinRegular;
   --josefinMedium: josefinMedium;
-}
-
-body {
-  color: var(--bodyColor);
 }
 
 .globalWidth {
