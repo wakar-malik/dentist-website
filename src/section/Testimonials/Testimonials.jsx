@@ -56,8 +56,8 @@ function Testimonials() {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
-          {testimonialData.map((testimonial) => (
-            <SwiperSlide>
+          {testimonialData.map((testimonial, index) => (
+            <SwiperSlide key={index}>
               <div className={styles.testimonialCard}>
                 <div className={styles.testimonialCardLeft}>
                   <div className={styles.testimonialCardImgContainer}>

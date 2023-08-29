@@ -23,6 +23,9 @@ import gallery2 from "../assets/images/gallery-2.jpeg";
 import gallery3 from "../assets/images/gallery-3.jpeg";
 import gallery4 from "../assets/images/gallery-4.jpeg";
 import gallery5 from "../assets/images/gallery-5.jpeg";
+import blog1 from "../assets/images/blog-1.jpeg";
+import blog2 from "../assets/images/blog-2.jpeg";
+import blog3 from "../assets/images/blog-3.jpeg";
 
 export default {
   logo,
@@ -50,4 +53,7 @@ export default {
   gallery4,
   gallery5,
   testimonial,
+  blog1,
+  blog2,
+  blog3,
 };

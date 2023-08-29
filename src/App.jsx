@@ -5,6 +5,7 @@ import Treatment from "./section/Treatment/Treatment";
 import Dentist from "./section/Dentist/Dentist";
 import Gallery from "./section/Gallery/Gallery";
 import Testimonials from "./section/Testimonials/Testimonials";
+import Blog from "./section/Blog/Blog";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Dentist />
       <Gallery />
       <Testimonials />
+      <Blog />
     </>
   );
 }
