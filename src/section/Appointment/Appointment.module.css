@@ -1,0 +1,38 @@
+.appointSection {
+  background-color: var(--bgColor);
+  padding-top: 2rem;
+}
+
+.appointSection .appointContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.appointLeft,
+.appointRight {
+  width: 50%;
+  height: auto;
+}
+
+.appointLeft .appointHeading {
+  font-family: var(--josefinRegular);
+  font-size: 2.3rem;
+  color: var(--white);
+}
+
+.appointLeft .appointBtn {
+  font-size: 1.1rem;
+  padding: 1.1rem 3rem;
+  color: var(--white);
+  border-radius: 0.2rem;
+  background-color: var(--pink);
+  cursor: pointer;
+  border: none;
+  margin-top: 2rem;
+}
+
+.appointLeft .appointBtn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
