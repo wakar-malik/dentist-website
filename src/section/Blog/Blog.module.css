@@ -1,0 +1,70 @@
+/* blog section */
+.blogSection .blogHeading {
+  font-family: var(--josefinRegular);
+  font-size: 2.6rem;
+  color: var(--black);
+  text-align: center;
+}
+
+/* blog cards */
+.blogCards {
+  display: flex;
+  align-items: stretch;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.blogCard:hover .blogCardDetails {
+  background-color: var(--pink);
+}
+
+.blogCard:hover .blogCardDetails .blogCardTitle {
+  color: var(--white);
+}
+
+.blogCard .blogCardImgContainer {
+  width: 100%;
+  height: 18rem;
+  background-color: #ededed;
+}
+
+.blogCard .blogCardImgContainer > .blogCardImg {
+  width: 100%;
+  height: 100%;
+}
+
+.blogCards .blogCardDetails {
+  padding: 2rem;
+  text-align: left;
+  font-family: var(--robotoSlabRegular);
+  display: flex;
+  flex-direction: column;
+}
+
+.blogCardDetails .blogCardTitle {
+  font-family: var(--josefinLight);
+  line-height: 2.3rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-bottom: 0.4rem;
+}
+
+.blogCardDetails .blogCardCreater {
+  font-size: 1.1rem;
+  padding-top: 1.4rem;
+  border-top: 2px solid var(--desColor);
+  margin-top: 2rem;
+}
+
+.blogCardDetails .blogCardDate {
+  margin-left: 1rem;
+}

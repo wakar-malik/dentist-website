@@ -52,6 +52,7 @@
 .testimonialCard .testimonialCardLeft .testimonialCardName {
   font-family: var(--josefinRegular);
   margin-bottom: 0.3rem;
+  color: var(--black);
 }
 
 .testimonialCard .testimonialCardLeft .testimonialCardProfession {
@@ -61,6 +62,7 @@
 .testimonialCard .testimonialCardRight .testimonialCardHeading {
   font-family: var(--josefinRegular);
   margin-bottom: 0.6rem;
+  color: var(--black);
 }
 
 .testimonialCard .testimonialCardRight .testimonialCardDescription {
