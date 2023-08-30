@@ -72,3 +72,15 @@ body {
 .globalPadding {
   padding: 6rem 0;
 }
+
+@media screen and (max-width: 1760px) {
+  .globalWidth {
+    width: 90%;
+  }
+}
+
+/* @media screen and (max-width: 1320px) {
+  .globalWidth {
+    width: 90%;
+  }
+} */
