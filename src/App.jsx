@@ -8,6 +8,7 @@ import Testimonials from "./section/Testimonials/Testimonials";
 import Blog from "./section/Blog/Blog";
 import Appointment from "./section/Appointment/Appointment";
 import Footer from "./section/Footer/Footer";
+import Copyright from "./section/Copyright/Copyright";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Appointment />
       <Blog />
       <Footer />
+      <Copyright />
     </>
   );
 }
