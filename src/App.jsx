@@ -15,14 +15,14 @@ function App() {
     <>
       <Home />
       <Welcome />
-      {/* <Treatment />
+      <Treatment />
       <Dentist />
       <Gallery />
       <Testimonials />
       <Appointment />
       <Blog />
       <Footer />
-      <Copyright /> */}
+      <Copyright />
     </>
   );
 }
