@@ -97,6 +97,8 @@
 .welcomeCard {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-self: stretch;
   padding: 4rem 2.5rem;
   transition: all 0.2s ease-in;
   text-align: center;
@@ -110,7 +112,7 @@
 .welcomeCard .welcomeCardImgContainer {
   width: 4rem;
   height: 4rem;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
@@ -140,5 +142,67 @@
   }
   to {
     bottom: -1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .welcomeCardContainer {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 0;
+    justify-content: space-between;
+  }
+
+  .welcomeCard {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcomeCard {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .familySection .familyContainer {
+    flex-direction: column;
+  }
+
+  .familyLeft {
+    padding-bottom: 3rem;
+  }
+
+  .familyContainer .familyLeft,
+  .familyRight {
+    width: 100%;
+  }
+
+  .familyRight .familyCard {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+  .familyRight .familyCard {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .familyRight .familyCard {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .familyContainer .familyLeft .familyImgContainer .animatedImg {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .familyContainer .familyLeft .familyImgContainer .animatedImg {
+    width: 30%;
   }
 }
