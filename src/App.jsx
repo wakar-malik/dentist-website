@@ -18,11 +18,11 @@ function App() {
       <Treatment />
       <Dentist />
       <Gallery />
-      <Testimonials />
+      {/* <Testimonials />
       <Appointment />
       <Blog />
       <Footer />
-      <Copyright />
+      <Copyright /> */}
     </>
   );
 }

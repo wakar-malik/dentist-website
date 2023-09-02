@@ -104,10 +104,6 @@
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.welcomeCard:hover {
-  transform: translateY(-1rem);
-}
-
 .welcomeCard .welcomeCardImgContainer {
   width: 4rem;
   height: 4rem;
@@ -141,6 +137,12 @@
   }
   to {
     bottom: -1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .welcomeCard:hover {
+    transform: translateY(-1rem);
   }
 }
 

@@ -10,10 +10,40 @@
 }
 
 .galleryImgContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
   margin-top: 3rem;
+}
+
+.galleryImgSubContainer {
+  border-radius: 1.3rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.galleryImg {
+  width: 100%;
+}
+
+.modalImg {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .galleryImgContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .galleryImgContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .modalImg {
+    width: 60vw;
+  }
 }
