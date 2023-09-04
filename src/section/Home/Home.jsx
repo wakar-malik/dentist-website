@@ -9,7 +9,7 @@ import Button from "../../components/Button/Button";
 function Home() {
   return (
     <Section className={`${styles.homeSection}`}>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <div className={`${styles.homeContainer} globalWidth`}>
         <div className={styles.homeLeft}>

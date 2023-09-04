@@ -1,6 +1,5 @@
 .homeSection {
-  padding: 3rem 0;
-  /* height: 95vh; */
+  padding: 3rem 0 15rem;
   background-color: var(--bgColor);
 }
 
