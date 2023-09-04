@@ -6,13 +6,17 @@
 .appointSection .appointContainer {
   display: flex;
   align-items: center;
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
 .appointLeft,
 .appointRight {
   width: 50%;
   height: auto;
+}
+
+.appointRightDocImage {
+  width: 60%;
 }
 
 .appointLeft .appointHeading {
@@ -35,4 +39,33 @@
 .appointLeft .appointBtn:hover {
   background-color: var(--white);
   color: var(--black);
+}
+
+@media screen and (max-width: 990px) {
+  .appointSection .appointContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 6rem;
+  }
+
+  .appointLeft,
+  .appointRight {
+    width: 100%;
+  }
+
+  .appointLeft {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appointRight {
+    padding-bottom: 3rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .appointLeft .appointBtn {
+    align-self: center;
+  }
 }

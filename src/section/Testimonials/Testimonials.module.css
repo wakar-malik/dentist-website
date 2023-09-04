@@ -69,3 +69,27 @@
   font-family: var(--robotoSlabRegular);
   margin-bottom: 0.6rem;
 }
+
+@media screen and (max-width: 950px) {
+  .testimonialCard {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .testimonialCard .testimonialCardLeft {
+    padding-bottom: 3rem;
+    margin-right: 0;
+  }
+
+  .testimonialCardHeading,
+  .testimonialCardDescription {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonialCard {
+    padding: 0;
+  }
+}

@@ -40,16 +40,16 @@ function Footer() {
   return (
     <footer className={`${styles.footer} globalPadding`}>
       <div className={`${styles.footerContainer} globalWidth`}>
-        <PracticeList />
-        <ResourcesList />
-        <ServicesList />
+        <PracticeList practiceListData={practiceListData} />
+        <ResourcesList resourcesListData={resourcesListData} />
+        <ServicesList servicesListData={servicesListData} />
         <AddressList addressListData={addressListData} />
       </div>
     </footer>
   );
 }
 
-function PracticeList() {
+function PracticeList({ practiceListData }) {
   return (
     <>
       <ul className={styles.footerList}>
@@ -61,7 +61,7 @@ function PracticeList() {
   );
 }
 
-function ResourcesList() {
+function ResourcesList({ resourcesListData }) {
   return (
     <>
       <ul className={styles.footerList}>
@@ -73,7 +73,7 @@ function ResourcesList() {
   );
 }
 
-function ServicesList() {
+function ServicesList({ servicesListData }) {
   return (
     <>
       <ul className={styles.footerList}>
