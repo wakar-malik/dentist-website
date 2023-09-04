@@ -9,7 +9,7 @@ import Button from "../../components/Button/Button";
 function Home() {
   return (
     <Section className={`${styles.homeSection}`}>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className={`${styles.homeContainer} globalWidth`}>
         <div className={styles.homeLeft}>
@@ -28,28 +28,26 @@ function Home() {
         </div>
         <div className={styles.homeRight}>
           <div className={styles.imageContainer}>
-            <div className={styles.rightImageContainer}>
-              <Image
-                src={IMAGES.tooth}
-                alt="tooth-image"
-                className={styles["toothImg"]}
-              />
-              <Image
-                src={IMAGES.cloud}
-                alt="tooth-image"
-                className={styles["cloudImg"]}
-              />
-              <Image
-                src={IMAGES.nurse}
-                alt="nurse-image"
-                className={styles["nurseImg"]}
-              />
-              <Image
-                src={IMAGES.doctor}
-                alt="doctor-image"
-                className={styles["doctorImg"]}
-              />
-            </div>
+            <Image
+              src={IMAGES.tooth}
+              alt="tooth-image"
+              className={styles.toothImg}
+            />
+            <Image
+              src={IMAGES.cloud}
+              alt="tooth-image"
+              className={styles.cloudImg}
+            />
+            <Image
+              src={IMAGES.nurse}
+              alt="nurse-image"
+              className={styles.nurseImg}
+            />
+            <Image
+              src={IMAGES.doctor}
+              alt="doctor-image"
+              className={styles.doctorImg}
+            />
           </div>
         </div>
       </div>

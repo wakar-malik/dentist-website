@@ -1,6 +1,6 @@
 .homeSection {
   padding: 3rem 0;
-  height: 95vh;
+  /* height: 95vh; */
   background-color: var(--bgColor);
 }
 
@@ -16,14 +16,15 @@
   width: 45%;
 }
 
-.homeContainer > .homeRight .rightImageContainer {
+.homeContainer > .homeRight .imageContainer {
   position: relative;
-  display: inline-block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .homeContainer > .homeRight .toothImg {
-  width: 100%;
-  height: 100%;
+  width: 70%;
 }
 
 .homeContainer > .homeRight .nurseImg,
@@ -36,11 +37,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 125%;
+}
+
+.homeContainer > .homeRight .cloudImg {
+  width: 100%;
+  height: 100%;
 }
 
 .homeContainer > .homeRight .nurseImg {
-  left: 4.5rem;
+  left: 20%;
   bottom: 0;
   animation-name: nurse;
   animation-duration: 1s;
@@ -50,7 +55,7 @@
 }
 
 .homeContainer > .homeRight .doctorImg {
-  right: 4.5rem;
+  right: 20%;
   bottom: -2rem;
   animation-name: doctor;
   animation-duration: 1s;
@@ -147,5 +152,65 @@
   }
   to {
     bottom: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  .homeContainer > .homeLeft,
+  .homeRight {
+    width: 100%;
+  }
+
+  .homeContainer > .homeLeft {
+    padding-bottom: 3rem;
+  }
+
+  .homeContainer > .homeRight .cloudImg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .homeLeft > .btnContainer .appointmentBtn,
+  .learnBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1190px) {
+  .homeLeft > .btnContainer .appointmentBtn,
+  .learnBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1210px) {
+  .homeContainer > .homeRight {
+    width: 53%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 990px) {
+  .homeContainer > .homeRight .nurseImg {
+    left: 25%;
+  }
+  .homeContainer > .homeRight .doctorImg {
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .homeContainer > .homeRight .nurseImg,
+  .doctorImg {
+    width: 20%;
   }
 }

@@ -18,6 +18,9 @@
 }
 
 .treatMentCard {
+  display: grid;
+  justify-content: space-between;
+  justify-items: flex-start;
   border: 1px solid var(--borderColor);
   padding: 3rem 2rem;
   transition: all 0.1s ease-in;
@@ -55,4 +58,16 @@
 .treatMentCard:hover {
   color: var(--pink);
   background-color: var(--hoverBg);
+}
+
+@media screen and (max-width: 1100px) {
+  .treatmentCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .treatmentCards {
+    grid-template-columns: 1fr;
+  }
 }

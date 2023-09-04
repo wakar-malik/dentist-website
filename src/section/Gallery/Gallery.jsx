@@ -9,7 +9,10 @@ const galleryImages = [
   { img: IMAGES.gallery1 },
   { img: IMAGES.gallery2 },
   { img: IMAGES.gallery3 },
-  { img: IMAGES.gallery4 },
+  { img: IMAGES.gallery5 },
+  { img: IMAGES.gallery1 },
+  { img: IMAGES.gallery2 },
+  { img: IMAGES.gallery3 },
   { img: IMAGES.gallery5 },
 ];
 
@@ -41,7 +44,7 @@ function Gallery() {
 
       {modal && (
         <Modal onClose={modalHandler}>
-          <Image src={image} alt="modal-img" />
+          <Image src={image} alt="modal-img" className={styles.modalImg} />
         </Modal>
       )}
     </Section>
@@ -55,9 +58,13 @@ function GalleryPhotos({ galleryImages, onGetImage, onOpenModal }) {
         <div
           key={i}
           onClick={() => onGetImage(i)}
-          style={{ borderRadius: "1.3rem", overflow: "hidden" }}
+          className={styles.galleryImgSubContainer}
         >
-          <Image src={image.img} alt="gallery-img" />
+          <Image
+            src={image.img}
+            alt="gallery-img"
+            className={styles.galleryImg}
+          />
         </div>
       ))}
     </div>

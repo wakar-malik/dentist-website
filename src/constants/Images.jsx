@@ -26,6 +26,7 @@ import gallery5 from "../assets/images/gallery-5.jpeg";
 import blog1 from "../assets/images/blog-1.jpeg";
 import blog2 from "../assets/images/blog-2.jpeg";
 import blog3 from "../assets/images/blog-3.jpeg";
+import appointment from "../assets/images/appointment-img.png";
 
 export default {
   logo,
@@ -56,4 +57,5 @@ export default {
   blog1,
   blog2,
   blog3,
+  appointment,
 };

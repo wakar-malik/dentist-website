@@ -89,28 +89,25 @@
 
 /* card section css */
 .welcomeCardContainer {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .welcomeCard {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-content: flex-start;
+  align-content: flex-start;
   padding: 4rem 2.5rem;
   transition: all 0.2s ease-in;
   text-align: center;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.welcomeCard:hover {
-  transform: translateY(-1rem);
-}
-
 .welcomeCard .welcomeCardImgContainer {
   width: 4rem;
   height: 4rem;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
@@ -140,5 +137,66 @@
   }
   to {
     bottom: -1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .welcomeCard:hover {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .welcomeCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcomeCardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .familySection .familyContainer {
+    flex-direction: column;
+  }
+
+  .familyLeft {
+    padding-bottom: 3rem;
+  }
+
+  .familyContainer .familyLeft,
+  .familyRight {
+    width: 100%;
+  }
+
+  .familyRight .familyCard {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+  .familyRight .familyCard {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .familyRight .familyCard {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .familyContainer .familyLeft .familyImgContainer .animatedImg {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .familyContainer .familyLeft .familyImgContainer .animatedImg {
+    width: 30%;
   }
 }

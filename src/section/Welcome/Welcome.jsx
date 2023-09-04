@@ -10,7 +10,7 @@ const welcomeCardData = [
     cardImg: IMAGES.telephoneCard,
     cardTitle: "Easy Appointment",
     cardDescription:
-      "Lorem Ipsum is simply is very dummy text of the printings and type setting",
+      "Lorem Ipsum is simply is ijnwin wijnwun wu uwuw very dummy text of the printings and type setting",
   },
   {
     cardImg: IMAGES.doctorCard,
